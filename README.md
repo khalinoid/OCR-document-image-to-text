@@ -1,17 +1,4 @@
-# 📝 OCR Document Scanner
 
-This project extracts text from scanned documents using Python and Tesseract OCR. It supports image formats like JPG, PNG, and TIFF.
-
----
-
-## 📸 Features
-
-- Convert scanned images to editable text
-- Supports multiple image formats
-- Easy to customize and extend
-- Based on Tesseract OCR
-
----
 
 ## 🛠️ Requirements
 
@@ -47,35 +34,3 @@ pip install pillow pytesseract
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 ```
 
----
-
-## 🚀 Usage
-
-```python
-from PIL import Image
-import pytesseract
-
-# Load image
-image = Image.open('scanned_document.jpg')
-
-# Extract text
-text = pytesseract.image_to_string(image)
-
-# Output text
-print(text)
-```
-
----
-
-## 📁 Example
-
-```
-Input:  scanned_document.jpg  
-Output:  "This is a sample scanned document."
-```
-
----
-
-## 📄 License
-
-MIT License
